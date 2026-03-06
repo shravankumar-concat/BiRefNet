@@ -1,0 +1,16 @@
+datasets:
+  DIS5K:
+    type: salient_object
+    path: birefnet_experiments/datasets/DIS5K
+  DUTS:
+    type: salient_object
+    path: birefnet_experiments/datasets/DUTS
+  product_bg_removal:
+    type: product_background_removal
+    path: birefnet_experiments/datasets/product_bg_removal
+  automotive:
+    type: automotive_segmentation
+    path: birefnet_experiments/datasets/automotive
+  generic_foreground:
+    type: generic_foreground
+    path: birefnet_experiments/datasets/generic_foreground
