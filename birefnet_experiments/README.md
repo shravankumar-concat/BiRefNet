@@ -214,3 +214,17 @@ birefnet_experiments/
   segmentation_models/
   results/
 ```
+
+## 11) Public-image smoke test
+
+To quickly validate the local I/O pipeline with openly available images from Wikimedia Commons:
+
+```bash
+pytest tests/test_public_images_pipeline.py
+```
+
+This test downloads two public sample images and verifies that `collect_inputs(...)` and `save_outputs(...)` produce:
+
+- `mask.png`
+- `masked_image.png`
+- `raw_probability_map.npy`
